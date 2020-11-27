@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Vinyl</title>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="Cloud.js"></script>
+    <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/3.3.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <body onload="showTime(), setGreeting()">
+        <div class="spinner-wrapper">
+            <div class="spinner"></div>
+        </div>
+
+        <header class="headclass">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="CloudIndex.html">
+                            <li>Home</li>
+                        </a>
+                        <a href="CloudAbout.html">
+                            <li>About Us</li>
+                        </a>
+                        <a href="CloudStore.html">
+                            <li>Store</li>
+                        </a>
+                        <a href="CloudContact.html">
+                            <li>Careers</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+            <span>
+            <h1 class="title">Careers</h1>
+            <button onclick="darkmode()" style="float: right; float: top;" class ="darkbutton">Toggle dark mode</button>
+            </span>
+        </header>
+        <h1 class="conthead">Jobs at Cloud Vinyl</h1>
+        <h2>Would you like to work with us at Cloud Vinyl? Are you interested in working with a wide range of music and merch? Are you good at working with people and are open to exciting oppurtunities like organizing tickets for gigs and concerts? Then you
+            can apply for a job below and start an exciting career with us.
+        </h2>
+        <h1 class="conthead">Career paths with us</h1>
+        <hr>
+        <h1>Web developer</h1>
+        <h2>This is a job perfect for those who are interested in computers and creating websites. We are looking for anything from front-end developers to Full stack with some experience with HTML, CSS and JavaScript, along with doing web development you
+            may be providing IT support and working with our stores more technical features so a good knowledge of computers is required. You may also be helping with the online store</h2>
+        <h2>Requirements: <br>A level 4 GCSE or above in English, Maths and Computers Science/IT<br>Decent Knowledge in HTML, CSS and JavaScript</h2>
+        <hr>
+        <h2 style="text-align: center;">There are many Resources out there to help you learn web development skills</h2>
+        <div style="display: flex; justify-content: space-evenly;">
+            <a href=" https://www.codecademy.com/learn " target="_blank "><img src="Images/codecademy.jpg " style="height:80px; width:auto; "></a>
+            <a href="https://www.w3schools.com " target="_blank "><img src="Images/w3.png " style="height:80px; width:auto; "></a>
+            <a href="https://www.youtube.com " target="_blank "><img src="Images/youtube.png " style="height:80px; width:auto; "></a>
+
+        </div>
+        <hr>
+        <h1>Sales Assistant</h1>
+        <h2>A job well suited to those who enjoy music, especially those who can interact with customers and strike up conversations about music. In this role you will be interacting with many customers a day and helping them find what they need and selling
+            our products to the customers</h2>
+        <h2>Requirements: <br> Able to Interact with Customers well and have a passion for music<br> A level 4 GCSE or above in Maths and English</h2>
+        <hr>
+        <br>
+        <h1>Stock manager</h1>
+        <h2>In this important role you will be providing our store with what brings it to life, Music. As stock manager your job will be to watch for new releases, mnake deals with people selling records and interact with 100s of other music lovers in an
+            attempt to find more records to add to our collection</h2>
+        <h2>Requirements: <br> Have a good knowledge of music and be able to interact well with potentional stock providers <br> Know how to use spreadsheets to keep track of our stock <br> Level 4 GCSE or above in Maths and English</h2>
+        <br>
+        <hr>
+        <h1>Event Organiser</h1>
+        <h2>One of our most exciting Career options we offer. The event organiser has the oppurtunity to organise gigs and events. This means potentionally meeting and talking to bands and record labels about setting up events. At Cloud Vinyl we have monthly
+            gigs with sometimes some popular artists and it will be your job to set these up. You will also be in charge of Food, Drinks, tickets and PR of these events.</h2>
+        <h2>Requirements: <br>Have good communication skills and be a good leader, able to lead the team that is helping you organise the events <br> Level 4 or above GCSE Maths and English</h2>
+        <form style="border:1px solid #ccc">
+            <div style="padding: 20px; margin-bottom: 100px; ">
+                <h1>Application Form</h1>
+                <p>Please fill in this form to apply.</p>
+                <hr>
+                <label for="fname"><b>First name</b></label>
+                <input type="text" placeholder="Enter your first name " name="fname " required>
+                <label for="sname"><b>Surname</b></label>
+                <input type="text" placeholder="Enter your Surname " name="sname " required>
+                <label for="email"><b>Email</b></label>
+                <input type="email" placeholder="Enter Email " name="email " required>
+                <label for="tel"><b>Phone Number</b></label>
+                <input type="tel" placeholder="Enter phone number here " name="tel " required>
+                <label for="dob"><b>Date of Birth</b></label>
+                <input type="date" placeholder="Enter Date of Birth " name="dob " required>
+                <label for="job"><b>Job you want to apply for</b></label>
+                <br>
+                <select id="job">
+                    <option value="Select">--Please Select One--</option>
+                    <option value="Web Developer ">Web Developer</option>
+                    <option value="Sales Assistant ">Sales Assistant</option>
+                    <option value="Stock Manager ">Stock Manager</option>
+                    <option value="Customer Support ">Event Organiser</option>
+                  </select>
+                <br>
+                <label for="cv"><b>CV</b></label>
+                <input type="text" placeholder="Link CV here " name="psw-repeat " required>
+
+                <label>
+                <input type="checkbox" name="bot " style="margin-bottom:15px "> You are not a robot
+                </label>
+
+                <div>
+                    <span>
+                    <button type="button " style="padding-right:5px; ">Cancel</button>
+                    <button onclick="apply() "  type="submit " class="signupbtn ">Apply</button>
+                    <p id="submit-button "></p></span>
+                </div>
+            </div>
+        </form>
+        <footer style="background-image: url(Images/cloudbackground.jpg); background-size:cover; margin:-3px; ">
+            <span>
+            
+            <ul style=" list-style: none; ">
+                <a href="https://YouTube.com " target=_blank>
+                    <li class="list "><img src="Images/youtube.png " style="width: 50px; height: auto; " class="bouncy "></li>
+                </a>
+                <a href="https://instagram.com " target=_blank>
+                    <li class="list "><img src="Images/instagram.png " style="width: 50px; height: auto; animation-delay:0.07s " class="bouncy "></li>
+                </a>
+                <a href="https://facebook.com " target=_blank>
+                    <li class="list "><img src="Images/facebook.png " style="width: 50px; height: auto; animation-delay:0.1s " class="bouncy "></li>
+                </a>
+                
+                <h3 style="float:right; padding-right:20px; color: rgba(43, 43, 43, 0.733) ">Email: CloudVinyl@randomemail.com <br>Telephone: (+44) 7547232656</h3>
+                <h3 class="footer-title ">Cloud Vinyl</h3>
+            </ul>
+            
+            </span>
+        </footer>
+        <script>
+            jQuery(document).ready(function() {
+                //Preloader
+                var preloaderFadeOutTime = 1500;
+
+                function hidePreloader() {
+                    var preloader = jQuery('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                }
+                hidePreloader();
+            });
+        </script>
+    </body>
+
+</html>

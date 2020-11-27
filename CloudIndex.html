@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Vinyl</title>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="Cloud.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/3.3.1/jquery-ui.min.js"></script>
+</head>
+
+<body onload="showTime(), setGreeting()">
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="headclass">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="CloudIndex.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="CloudAbout.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="CloudStore.html">
+                        <li>Store</li>
+                    </a>
+                    <a href="CloudContact.html">
+                        <li>Careers</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+        <span>
+        <h1 class="title">Cloud Vinyl</h1>
+        <button onclick="darkmode()" style="float: right; float: top;" class ="darkbutton">Toggle dark mode</button>
+        </span>
+    </header>
+
+    <span>
+        <span class="greeting-class">
+            <h1 id="time"></h1>
+            <h1 id="greeting">placeholder</h1>
+        </span>
+
+    <h1 style="text-align: center;"><strong>Welcome to the Official Web page of Cloud Vinyl</strong></h1>
+
+
+    </span>
+    <hr>
+    <div>
+        <p style="font-size: 24px;">At Cloud Vinyl we take pride in our vast collection of Classic hits and Emerging artists from all different genres. Located at a cosy little shop (with a not so little basment full of records)
+            <img src="Images/recordstoreinside.jpg" style="float:left; padding:10px; height:270px; width:auto;"> Established in 2019, Our goal is to provide high quality vinyl to our customers. We have vinyls for eveeryone, and we recieve new stock twice
+            a week with pre-owned and brand new records alike. Along with Vinyls we also sell merch from hundreds of artists, record players, speakers and headphones. Along with Music you can listen to at home, here at Cloud Vinyl we organise our own
+            Gigs every month as well as selling tickets to the largest concerts around. At our gigs we bring in a wide variety of artists and from our last gigs the reviews from our customers who attended were amazing, even the artists themselves say
+            they loved it.
+
+        </p>
+        <div style="float:left; padding: 20px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d6570.561341797312!2d-1.7575890464863733!3d53.7924436262596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1585218032883!5m2!1sen!2suk" width="400" height="250" frameborder="0"
+                style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+    </div>
+    <footer style="background-image: url(Images/cloudbackground.jpg); background-size:cover; margin:-3px;">
+
+
+        <ul style=" list-style: none; ">
+            <a href="https://YouTube.com" target=_blank>
+                <li class="list"><img src="Images/youtube.png " style="width: 50px; height: auto; " class="bouncy"></li>
+            </a>
+            <a href="https://instagram.com" target=_blank>
+                <li class="list"><img src="Images/instagram.png " style="width: 50px; height: auto; animation-delay:0.07s" class="bouncy"></li>
+            </a>
+            <a href="https://facebook.com" target=_blank>
+                <li class="list"><img src="Images/facebook.png" style="width: 50px; height: auto; animation-delay:0.1s" class="bouncy"></li>
+            </a>
+
+            <h3 style="float:right; padding-right:20px; color: rgba(43, 43, 43, 0.733)">Email: CloudVinyl@randomemail.com <br>Telephone: (+44) 7547232656</h3>
+            <h3 class="footer-title">Cloud Vinyl</h3>
+        </ul>
+
+
+    </footer>
+    <script>
+        jQuery(document).ready(function() {
+            //Preloader
+            var preloaderFadeOutTime = 1500;
+
+            function hidePreloader() {
+                var preloader = jQuery('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cloud Vinyl</title>
+    <link rel="icon" href="Images/icon.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="JavaScript/Cloud.js"></script>
+    <script src="https://www.google.com/reCAPTCHA/api.js" async defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/3.3.1/jquery-ui.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
+
+    <header class="headclass">
+        <nav role="navigation">
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="CloudIndex.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="CloudAbout.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="CloudStore.html">
+                        <li>Store</li>
+                    </a>
+                    <a href="CloudContact.html">
+                        <li>Careers</li>
+                    </a>
+                </ul>
+            </div>
+        </nav>
+
+        <h1 class="title">Store</h1>
+        <button onclick="darkmode()" style="float: right; float: top;" class="darkbutton">Toggle dark mode</button>
+    </header>
+
+    <section>
+        <h2 class="music-title">Music</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">American Idiot - Green Day</span>
+                <img class="shop-item-image" src="Images/Album1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£15.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Nevermind - Nirvana</span>
+                <img class="shop-item-image" src="Images/Album2.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£11.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Kasabian - Kasabian</span>
+                <img class="shop-item-image" src="Images/Album3.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£15.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Life's Not out to Get You <br>- Neck Deep</span>
+                <img class="shop-item-image" src="Images/Album4.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£9.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">amo - Bring Me The Horizon</span>
+                <img class="shop-item-image" src="Images/Album5.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£14.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">AM - Arctic Monkeys</span>
+
+                <img class="shop-item-image" src="Images/Album6.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£18.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">The Black Parade<br> - My Chemical Romance</span>
+
+                <img class="shop-item-image" src="Images/Album7.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£14.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">OK Computer - Radiohead</span>
+
+                <img class="shop-item-image" src="Images/Album8.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£21.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Abbey Road - The Beatles</span>
+
+                <img class="shop-item-image" src="Images/Album9.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£28.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Demon Days - Gorrilaz</span>
+
+                <img class="shop-item-image" src="Images/Album10.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Goodbye Yellow Brick Road<br> - Elton John</span>
+
+                <img class="shop-item-image" src="Images/Album11.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£29.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Guardians of the Galaxy:<br> Awesome Mix Vol. 1</span>
+
+                <img class="shop-item-image" src="Images/Album12.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£19.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Baby Driver (Soundtrack)</span>
+
+                <img class="shop-item-image" src="Images/Album13.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£19.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Dookie - Green Day</span>
+
+                <img class="shop-item-image" src="Images/Album14.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£13.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">(What's the Story)<br> Morning Glory? - Oasis</span>
+
+                <img class="shop-item-image" src="Images/Album15.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£22.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Meteora - Linkin Park</span>
+
+                <img class="shop-item-image" src="Images/Album16.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£17.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">The Search - NF</span>
+
+                <img class="shop-item-image" src="Images/Album17.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£25.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Enema of the State - Blink-182</span>
+
+                <img class="shop-item-image" src="Images/Album18.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£18.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Hot Fuss - Killers</span>
+
+                <img class="shop-item-image" src="Images/Album19.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£15.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Blood Sugar Sex Magik<br> - Red Hot Chili Peppers</span>
+
+                <img class="shop-item-image" src="Images/Album20.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£16.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="music-title">Merch</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+
+                <span class="shop-item-title">T-Shirt</span>
+
+                <img class="shop-item-image" src="Images/shirt.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£12.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+            <div class="shop-item">
+
+                <span class="shop-item-title">Hoodie</span>
+
+                <img class="shop-item-image" src="Images/hoodie.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">£19.99</span>
+                    <button onclick="addedToCart()" class="icon-btn add-btn">
+                        <div class="add-icon"></div>
+                        <div class="btn-txt">Add to Cart</div>
+                      </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">
+        <h2 class="music-title">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header 
+            cart-column">ITEM</span>
+            <span class="cart-price cart-header
+            cart-column">PRICE</span>
+            <span class="cart-quantity cart-header
+            cart-column">QUANTITY</span>
+
+        </div>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="Images/hoodie.jpg">
+                <span class="cart-item-title">Hoodie</span>
+            </div>
+            <span class="cart-price cart-column">£19.99</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-input" type="number" value="1">
+                <button class="cart-remove" role="button">Remove</button>
+            </div>
+
+        </div>
+        <div class="cart-row">
+            <div class="cart-item cart-column">
+                <img class="cart-item-image" src="Images/Album17.png">
+                <span class="cart-item-title">Hoodie</span>
+            </div>
+            <span class="cart-price cart-column">£25.99</span>
+            <div class="cart-quantity cart-column">
+                <input class="cart-input" type="number" value="1">
+                <button class="cart-remove" role="button">Remove</button>
+            </div>
+
+        </div>
+        <div>
+            <span>Total:</span>
+            <span>£45.98</span>
+        </div>
+        <div>
+            <button role="button">PURCHASE</button>
+        </div>
+        </div>
+    </section>
+
+    <footer style="background-image: url(Images/cloudbackground.jpg); background-size:cover; margin:-3px;">
+        <span>
+        
+        <ul style=" list-style: none; ">
+            <a href="https://YouTube.com" target=_blank>
+                <li class="list"><img src="Images/youtube.png " style="width: 50px; height: auto; " class="bouncy"></li>
+            </a>
+            <a href="https://instagram.com" target=_blank>
+                <li class="list"><img src="Images/instagram.png " style="width: 50px; height: auto; animation-delay:0.07s" class="bouncy"></li>
+            </a>
+            <a href="https://facebook.com" target=_blank>
+                <li class="list"><img src="Images/facebook.png" style="width: 50px; height: auto; animation-delay:0.1s" class="bouncy"></li>
+            </a>
+            
+            <h3 style="float:right; padding-right:20px; color: rgba(43, 43, 43, 0.733)">Email: CloudVinyl@randomemail.com <br>Telephone: (+44) 7547232656</h3>
+            <h3 class="footer-title">Cloud Vinyl</h3>
+        </ul>
+        
+        </span>
+    </footer>
+    <script>
+        jQuery(document).ready(function() {
+            //Preloader
+            var preloaderFadeOutTime = 1500;
+
+            function hidePreloader() {
+                var preloader = jQuery('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
+    </script>
+</body>
+
+</html>
